@@ -1,0 +1,357 @@
+* {
+    margin : 0;
+    font-family: Arial;
+
+}
+
+
+
+body {
+   
+    text-align: center;
+    color: white;
+    background-image: url("blackjack.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+ 
+    
+}
+
+
+h1{
+    position: relative;
+    bottom: 35px;
+}
+h4{
+    position: relative;
+    bottom: 35px;
+}
+
+.card-image{
+    width: 80px;
+    padding: 5px;
+}
+
+
+#message-el{
+    font-size: 35px;
+    margin-top: 20px;
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+.sum{
+    font-size: 25px;
+    margin-top: 15px;
+    font-weight: bold;
+    background-color: black;
+    width: 45px;
+    height: 35px;
+    border-radius: 5px;
+    border: 2px solid white;
+    line-height: 1.4;
+}
+
+.container {
+   background-color: rgb(4, 163, 12);
+   width: 800px;
+   height: fit-content;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  
+   border: 2px solid white;
+   border-radius: 10px;
+   box-shadow: 0px 0px 12px 15px white;
+   padding-bottom: 15px;
+   margin-bottom: 50px;
+   padding-bottom: 35px;
+}
+
+
+
+#btn1 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    height: 30px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: red;
+    color: white;
+    border: 1px solid darkred;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+#btn2{
+    height: 30px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: red;
+    color: white;
+    border: 1px solid darkred;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.disabled{
+    height: 50px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: red;
+    color: white;
+    border: 1px solid darkred;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0.3;
+}
+
+#player {  
+    display: none;
+    font-size: 20px;
+    margin-top: 25px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 10px 5px white;
+    padding: 5px 8px;
+    width: fit-content;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* modal */
+  
+.modal {
+    display: none;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 380px;
+    height: 450px;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 15px red;
+    background-color: #212529;
+    color: whitesmoke;
+    
+}
+
+/* modal button check out */
+#modal1 {
+    display: none;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    
+   
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 15px red;
+    background-color: #212529;
+    color: whitesmoke;
+    
+}
+
+
+.modal-inner{
+    width: 290px;
+    margin: 45px auto;
+}
+
+.modal-inner-loading{
+    text-align: center;
+}
+
+/* modal buttons */
+#win {
+  font-size: bold;
+  margin-top: 45px;
+
+}
+
+#win-photo {
+    width: 250px;
+    height: 250px;
+}
+
+.modal-close-btn {
+   
+  margin-left: 100px;
+  margin-right: -155px;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: whitesmoke;
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:active{
+    color: red;
+    cursor: pointer;
+}
+
+.modal-close-btn:disabled{
+    color: whitesmoke;
+    opacity: 0.2;
+    cursor: not-allowed;
+}
+
+.modal-choice-btns{
+    margin-top: 10px;
+    margin-right: 5px;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.modal-btn{
+ 
+  
+    height: 30px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: red;
+    color: white;
+    border: 1px solid darkred;
+    border-radius: 5px;
+    line-height: 1.2;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+  
+}
+
+/* modal input */
+
+input {
+    
+    border: 1px solid #212529;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 15px;
+    width: 80%;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+
+/* modal after submit */
+
+.loading{
+    width: 50%; 
+    margin-top: 10px;
+}
+
+.modal-display-name{
+    color: red;
+    text-transform: uppercase;
+    
+}
+
+.modal-text{
+    height: 140px;
+    line-height: 23px;
+    margin-bottom: 0;
+   
+}
+
+::placeholder{
+    text-align: center;
+}
+#consent-forum {
+    display: inline;
+}
+
+
+
+.modal p {
+    font-size: 25px;
+    margin-top: 35px;
+    
+
+}
+
+
+
+#cards-el {
+    margin-top: 10px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    
+}
+#row{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+#btn3 {
+    margin-top: 5px;
+    height: 30px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: red;
+    color: white;
+    border: 1px solid darkred;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+@media (max-width:450px){
+    .container{
+        width: 350px;
+    }
+    #message-el{
+        font-size: 30px;
+    }
+    #cards-el{
+        display: flex;
+        flex-direction: column;
+    }
+    #row{
+        display: flex;
+
+    }
+    .card-image{
+        width: 70px;
+    }
+}
